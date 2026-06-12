@@ -20,7 +20,7 @@ const ICONS = {
   bucket: '<path d="M10 18c0-3.5 4.7-6 14-6s14 2.5 14 6"/><path d="M10 18h28l-3.2 20a3 3 0 0 1-3 2.6H16.2a3 3 0 0 1-3-2.6z"/>',
 };
 
-// Apply links use real job search engines, filtered by query + country.
+// Apply links use real job , filtered by query + country.
 function applyLinks(query) {
   const q = encodeURIComponent(query);
   return {
