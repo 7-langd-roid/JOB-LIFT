@@ -1,5 +1,5 @@
 /* ============================================================
-   JobTrend365 — shared job category data
+   JobLift360 — shared job category data
    Used by both index.html (category grid) and category.html
    (job detail pages). Edit this file to add, remove, or update
    job categories — both pages will update automatically.
