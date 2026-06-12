@@ -1,303 +1,205 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JOB LIFT APPLY YOUR DREAM JOB NOW</title>
-  <meta name="description" content="See the 10 most demanding jobs in the UK, US and Canada over the last 365 days, with salary ranges, how to join, and direct links to apply." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Lift - Remote Job Opportunities</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#fff;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.logo{
+    font-size:4rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.apply-btn{
+    display:inline-block;
+    background:#ff5a1f;
+    color:white;
+    text-decoration:none;
+    padding:18px 45px;
+    border-radius:50px;
+    font-size:22px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.apply-btn:hover{
+    transform:translateY(-3px);
+}
+
+.jobs{
+    padding:80px 20px;
+    background:#fff;
+    color:#333;
+}
+
+.jobs h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+.job-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.job-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+}
+
+.job-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.job-content{
+    padding:25px;
+}
+
+.job-content h3{
+    margin-bottom:10px;
+    color:#2563eb;
+}
+
+.job-content p{
+    margin-bottom:20px;
+    color:#555;
+}
+
+.card-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+}
+</style>
 </head>
 <body>
 
-  <!-- ===================== Header ===================== -->
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-mark">JT</span>
-        JobLift<span>24/7</span>
-      </a>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="#categories">Top Categories</a>
-        <a href="#reviews">Reviews</a>
-        <span class="nav-flags">🇬🇧 UK · 🇺🇸 US · 🇨🇦 CA</span>
-      </nav>
-    </div>
-  </header>
+<section class="hero">
+    <div class="hero-content">
+        <div class="logo">JOB LIFT</div>
 
-  <!-- ===================== Ticker ===================== -->
-  <div class="ticker">
-    <div class="ticker-track" id="tickerTrack"><!-- filled by script.js --></div>
-  </div>
+        <h2>Find Remote Jobs & Work From Home Opportunities</h2>
 
-  <!-- ===================== Hero ===================== -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">● Updated for the last 30 days</span>
-        
-       <p class="lead">
-          We track what job seekers are actually typing into search engines across all three countries,
-          then turn the top results into a simple guide: what the job involves, what it pays,
-          and exactly how to apply — no spam, no sign-up required.
-        </p>
-        <div class="hero-actions">
-          <a href="#categories" class="btn btn-primary">Browse top categories</a>
-          <a href="#reviews" class="btn btn-outline">Read real questions</a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="num">10</div>
-            <div class="label">Job categories</div>
-          </div>
-          <div class="hero-stat">
-            <div class="num">03</div>
-            <div class="label">Countries covered</div>
-          </div>
-          <div class="hero-stat">
-            <div class="num">36000</div>
-            <div class="label">JOB HERE</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-art">
-        <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a job search results panel">
-          <rect x="20" y="20" width="440" height="380" rx="20" fill="#ffffff" stroke="#d8e3fb" stroke-width="2"/>
-          <rect x="20" y="20" width="440" height="50" rx="20" fill="#eaf1ff"/>
-          <rect x="20" y="50" width="440" height="20" fill="#eaf1ff"/>
-          <circle cx="46" cy="45" r="5" fill="#d8e3fb"/>
-          <circle cx="64" cy="45" r="5" fill="#d8e3fb"/>
-          <circle cx="82" cy="45" r="5" fill="#d8e3fb"/>
-
-          <!-- search bar -->
-          <rect x="44" y="92" width="392" height="46" rx="23" fill="#eaf1ff" stroke="#d8e3fb" stroke-width="1.5"/>
-          <circle cx="72" cy="115" r="8" fill="none" stroke="#2456e5" stroke-width="3"/>
-          <line x1="78" y1="121" x2="87" y2="130" stroke="#2456e5" stroke-width="3" stroke-linecap="round"/>
-          <text x="100" y="121" font-family="IBM Plex Mono, monospace" font-size="15" fill="#0b1f44">warehouse associate</text>
-
-          <!-- result row 1 -->
-          <rect x="44" y="166" width="392" height="60" rx="14" fill="#ffffff" stroke="#d8e3fb" stroke-width="1.5"/>
-          <rect x="62" y="183" width="28" height="26" rx="7" fill="#eaf1ff"/>
-          <rect x="104" y="185" width="170" height="10" rx="5" fill="#0b1f44"/>
-          <rect x="104" y="203" width="110" height="8" rx="4" fill="#d8e3fb"/>
-          <circle cx="404" cy="196" r="17" fill="#2456e5"/>
-          <text x="404" y="200" font-family="IBM Plex Mono, monospace" font-size="11" fill="#ffffff" text-anchor="middle">UK</text>
-
-          <!-- result row 2 -->
-          <rect x="44" y="238" width="392" height="60" rx="14" fill="#ffffff" stroke="#d8e3fb" stroke-width="1.5"/>
-          <rect x="62" y="255" width="28" height="26" rx="7" fill="#eaf1ff"/>
-          <rect x="104" y="257" width="190" height="10" rx="5" fill="#0b1f44"/>
-          <rect x="104" y="275" width="120" height="8" rx="4" fill="#d8e3fb"/>
-          <circle cx="404" cy="268" r="17" fill="#4fa6ff"/>
-          <text x="404" y="272" font-family="IBM Plex Mono, monospace" font-size="11" fill="#ffffff" text-anchor="middle">US</text>
-
-          <!-- result row 3 -->
-          <rect x="44" y="310" width="392" height="60" rx="14" fill="#ffffff" stroke="#d8e3fb" stroke-width="1.5"/>
-          <rect x="62" y="327" width="28" height="26" rx="7" fill="#eaf1ff"/>
-          <rect x="104" y="329" width="150" height="10" rx="5" fill="#0b1f44"/>
-          <rect x="104" y="347" width="95" height="8" rx="4" fill="#d8e3fb"/>
-          <circle cx="404" cy="340" r="17" fill="#15349e"/>
-          <text x="404" y="344" font-family="IBM Plex Mono, monospace" font-size="11" fill="#ffffff" text-anchor="middle">CA</text>
-
-          <!-- floating trend badge -->
-          <g>
-            <rect x="318" y="2" width="150" height="36" rx="18" fill="#0b1f44"/>
-            <text x="338" y="25" font-family="IBM Plex Mono, monospace" font-size="13" fill="#6fe3a5">▲ +38%</text>
-            <text x="392" y="25" font-family="Inter, sans-serif" font-size="12" fill="#ffffff">searches</text>
-          </g>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== Categories ===================== -->
-  <section class="section" id="categories">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Top 10 list · refreshed periodically</span>
-        <h2>The 10 most demanding parttime & fulltime jobs right now</h2>
         <p>
-          Ranked by interest across the UK, US and Canada. Tap any category to see
-          typical pay, day-to-day duties, how to join, and a direct link to apply.
+            Start your career today with flexible remote positions,
+            part-time jobs, and online work opportunities.
         </p>
-      </div>
-      <div class="category-grid" id="categoryGrid">
-        <!-- filled by script.js -->
-      </div>
+
+        <a href="https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik"
+           class="apply-btn"
+           target="_blank">
+           APPLY NOW
+        </a>
     </div>
-  </section>
+</section>
 
-  <!-- ===================== Reviews / Q&A ===================== -->
-  <section class="section section-alt" id="reviews">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Community Q&amp;A</span>
-        <h2>Real questions from job seekers, answered by our team</h2>
-        <p>
-          A few of the most common questions we get from people browsing JobLift —
-          and the honest answers we send back.
-        </p>
-      </div>
+<section class="jobs">
 
-      <div class="review-list">
+<h2>Featured Opportunities</h2>
 
-        <article class="review">
-          <div class="review-head">
-            <div class="avatar">SM</div>
-            <div class="review-meta">
-              <div class="review-name">Sarah M. — Manchester, UK</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-q">Is JobLift actually free to use? There's no catch when I click "Apply Now," right?</p>
-          <div class="review-reply">
-            <div class="reply-mark">JT</div>
-            <p><strong>JobLift Team:</strong> Hi Sarah — thanks for checking! Yes, browsing every category and using the Apply Now links is completely free. We never ask for payment, card details, or personal information on this site. Apply Now simply takes you to job search results on a trusted site like Indeed, where you apply directly with the employer.</p>
-          </div>
-        </article>
+<div class="job-grid">
 
-        <article class="review">
-          <div class="review-head">
-            <div class="avatar">MT</div>
-            <div class="review-meta">
-              <div class="review-name">Marcus T. — Houston, TX, US</div>
-              <div class="stars">★★★★☆</div>
-            </div>
-          </div>
-          <p class="review-q">How often is the most demanding job list updated? Is it worth checking back regularly?</p>
-          <div class="review-reply">
-            <div class="reply-mark">JT</div>
-            <p><strong>JobLift Team:</strong> Great question, Marcus. We review the ranking and trend percentages periodically based on broader search trend data, so it's worth checking back every few weeks — especially around seasonal hiring periods, like the run-up to the holidays.</p>
-          </div>
-        </article>
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200" alt="">
+<div class="job-content">
+<h3>Digital Marketing Coordinator</h3>
+<p>Remote position with flexible working hours.</p>
+<a href="https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik" class="card-btn" target="_blank">
+Apply Now
+</a>
+</div>
+</div>
 
-        <article class="review">
-          <div class="review-head">
-            <div class="avatar">PK</div>
-            <div class="review-meta">
-              <div class="review-name">Priya K. — Toronto, ON, Canada</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-q">Do I need a work permit to apply for the jobs you've listed for Canada?</p>
-          <div class="review-reply">
-            <div class="reply-mark">JT</div>
-            <p><strong>JobLift Team:</strong> Hi Priya — it depends on your immigration status. Canadian citizens and permanent residents can apply directly. If you're on a study or work permit, double-check that it allows the type of work and number of hours for the role before applying — the employer or a licensed immigration consultant can confirm your eligibility.</p>
-          </div>
-        </article>
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200" alt="">
+<div class="job-content">
+<h3>Social Media Manager</h3>
+<p>Manage content and engagement from anywhere.</p>
+<a href="https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik" class="card-btn" target="_blank">
+Apply Now
+</a>
+</div>
+</div>
 
-        <article class="review">
-          <div class="review-head">
-            <div class="avatar">DO</div>
-            <div class="review-meta">
-              <div class="review-name">Dave O. — Leeds, UK</div>
-              <div class="stars">★★★★☆</div>
-            </div>
-          </div>
-          <p class="review-q">I clicked Apply Now and applied through your website but I haven't heard anything back yet — is that normal?</p>
-          <div class="review-reply">
-            <div class="reply-mark">JT</div>
-            <p><strong>JobLift360 Team:</strong> Yes, that's common, Dave. Response times vary a lot by employer and role — some reply within days, others take a few weeks, especially for high-volume roles like warehouse or retail. Keep an eye on your inbox (including spam) and consider applying to a few similar listings to improve your chances.</p>
-          </div>
-        </article>
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" alt="">
+<div class="job-content">
+<h3>Virtual Assistant</h3>
+<p>Support businesses remotely and earn online.</p>
+<a href="https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik" class="card-btn" target="_blank">
+Apply Now
+</a>
+</div>
+</div>
 
-        <article class="review">
-          <div class="review-head">
-            <div class="avatar">AR</div>
-            <div class="review-meta">
-              <div class="review-name">Aisha R. — Sacramento, CA, US</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-q">I'm a student looking for part-time work — are any of these categories good for that?</p>
-          <div class="review-reply">
-            <div class="reply-mark">JT</div>
-            <p><strong>JobLift Team:</strong> Definitely, Aisha. Food Service Crew Member, Retail Sales Associate and Cleaning &amp; Housekeeping roles tend to be the most flexible for evenings and weekends, and many don't require prior experience. Just double-check the minimum working age rules where you live.</p>
-          </div>
-        </article>
+</div>
 
-      </div>
-    </div>
-  </section>
+</section>
 
-  <!-- ===================== Footer ===================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo">
-            <span class="logo-mark">JT</span>
-            JobTrend365
-          </div>
-          <p>
-            JobLift is an independent information resource covering the most searched jobs
-            in the UK, US and Canada. We're not a recruitment agency and don't charge job seekers
-            for anything on this site.
-          </p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#categories">Top 10 categories</a></li>
-            <li><a href="#reviews">Reviews &amp; Q&amp;A</a></li>
-            <li><a href="category.html?cat=warehouse-associate">Warehouse Associate</a></li>
-            <li><a href="category.html?cat=delivery-driver">Delivery Driver</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Good to know</h4>
-          <ul>
-            <li>Free to browse — always</li>
-            <li>No CV upload or sign-up needed</li>
-            <li>Apply Now links go to trusted job boards</li>
-            <li>Genuine employers never charge to apply</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Joblift. All rights reserved.</span>
-        <span>Informational resource — not a recruitment agency or employer.</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="data.js"></script>
-  <script>
-    // Render the ticker tape using live category data (duplicated for a seamless loop)
-    const tickerTrack = document.getElementById('tickerTrack');
-    const tickerItems = JOB_CATEGORIES.map(cat =>
-      `<span class="ticker-item"><span class="ticker-flag">🇬🇧🇺🇸🇨🇦</span> ${cat.title} <span class="ticker-up">▲ ${cat.trend}</span></span>`
-    ).join('');
-    tickerTrack.innerHTML = tickerItems + tickerItems;
-
-    // Render the category grid
-    const grid = document.getElementById('categoryGrid');
-    JOB_CATEGORIES.forEach(cat => {
-      const a = document.createElement('a');
-      a.href = `category.html?cat=${cat.id}`;
-      a.className = 'category-card';
-      a.innerHTML = `
-        <span class="rank">#${String(cat.rank).padStart(2, '0')} MOST SEARCHED</span>
-        <div class="icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${cat.icon}</svg>
-        </div>
-        <h3>${cat.title}</h3>
-        <p>${cat.tagline}</p>
-        <div class="card-foot">
-          <span class="trend-up">▲ ${cat.trend} searches</span>
-          <span class="flags">🇬🇧 🇺🇸 🇨🇦</span>
-        </div>
-        <div class="card-foot" style="border-top:none; padding-top:8px;">
-          <span class="view-link">View pay, requirements &amp; apply →</span>
-        </div>
-      `;
-      grid.appendChild(a);
-    });
-  </script>
+<footer>
+    <h3>Job Lift</h3>
+    <p>Your Gateway To Remote Careers</p>
+</footer>
 
 </body>
 </html>
