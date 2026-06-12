@@ -24,9 +24,9 @@ const ICONS = {
 function applyLinks(query) {
   const q = encodeURIComponent(query);
   return {
-    uk: `https://uk.indeed.com/jobs?q=${q}`,
-    us: `https://www.indeed.com/jobs?q=${q}`,
-    ca: `https://ca.indeed.com/jobs?q=${q}`,
+    uk: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
+    us: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
+    ca: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
   };
 }
 
