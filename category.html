@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Category Details — JobTrend365</title>
+  <meta name="description" content="Job details, typical pay, how to join, terms and an apply now link for the UK, US and Canada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== Header ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">JT</span>
+        JobTrend<span>365</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Top Categories</a>
+        <a href="index.html#reviews">Reviews</a>
+        <span class="nav-flags">🇬🇧 UK · 🇺🇸 US · 🇨🇦 CA</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== Not found state ===================== -->
+  <div id="notFound" class="not-found" style="display:none;">
+    <div class="container">
+      <span class="eyebrow">404 · Category not found</span>
+      <h1>We couldn't find that job category</h1>
+      <p>The link you followed may be out of date. Take a look at our full list of the most searched jobs instead.</p>
+      <a href="index.html#categories" class="btn btn-primary">Back to top categories</a>
+    </div>
+  </div>
+
+  <!-- ===================== Main content ===================== -->
+  <main id="pageContent" class="container">
+
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <a href="index.html#categories">Top Categories</a>
+      <span class="sep">/</span>
+      <span id="breadcrumbTitle">Job details</span>
+    </nav>
+
+    <!-- Detail hero -->
+    <section class="detail-hero">
+      <div class="detail-icon" id="detailIcon"></div>
+      <div>
+        <div class="badge-row" style="margin-bottom:10px;">
+          <span class="badge badge-rank" id="badgeRank">#01</span>
+          <span class="badge badge-trend" id="badgeTrend">▲ +0% searches this year</span>
+          <span class="badge">🇬🇧 🇺🇸 🇨🇦 Hiring in all 3 countries</span>
+        </div>
+        <h1 id="jobTitle">Job title</h1>
+        <p class="detail-tagline" id="jobTagline">Tagline</p>
+      </div>
+    </section>
+
+    <div class="detail-grid">
+
+      <!-- Main column -->
+      <div class="detail-main">
+
+        <section class="detail-section">
+          <h2>Why this job is in demand</h2>
+          <p id="jobAbout">About text.</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Typical pay (UK, US &amp; Canada)</h2>
+          <table class="salary-table">
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>Typical salary range</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>🇬🇧 United Kingdom</td>
+                <td class="figure" id="salaryUK">—</td>
+              </tr>
+              <tr>
+                <td>🇺🇸 United States</td>
+                <td class="figure" id="salaryUS">—</td>
+              </tr>
+              <tr>
+                <td>🇨🇦 Canada</td>
+                <td class="figure" id="salaryCA">—</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="salary-note">
+            Figures are general estimates for entry-level to mid-level roles, based on publicly available
+            market data. Actual pay varies by employer, location, experience and shift pattern.
+          </p>
+        </section>
+
+        <section class="detail-section">
+          <h2>What the job involves</h2>
+          <div class="two-col-lists">
+            <div class="list-card">
+              <h3>What you'll do</h3>
+              <ul id="responsibilitiesList"></ul>
+            </div>
+            <div class="list-card">
+              <h3>What you'll need</h3>
+              <ul id="requirementsList"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-section">
+          <h2>How to join — step by step</h2>
+          <ol class="steps" id="howToJoinList"></ol>
+        </section>
+
+        <section class="detail-section">
+          <h2>Terms &amp; conditions before you apply</h2>
+          <div class="terms-box">
+            <ol>
+              <li>JobTrend365 is an independent information resource. We are not a recruitment agency and do not represent any employer listed.</li>
+              <li>All salary figures are general estimates based on publicly available market data and can vary by location, experience and employer.</li>
+              <li>The "Apply Now" buttons take you to job search results on a third-party site (such as Indeed). We don't control or guarantee the accuracy of listings on external sites.</li>
+              <li>Genuine employers never ask you to pay a fee, buy equipment, or send money in order to apply for or accept a job. If anyone asks you for payment, treat it as a scam and do not proceed.</li>
+              <li>You must meet the legal working age and right-to-work requirements for the country you apply in.</li>
+              <li>JobTrend365 does not collect CVs, applications or personal data through this site, and we are not responsible for the hiring decisions or outcomes of any third party.</li>
+            </ol>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="apply-card">
+          <h3>Ready to apply?</h3>
+          <p>Choose your country to see current openings for this role on a trusted job search site.</p>
+          <div class="apply-options">
+            <a class="apply-option" id="applyUK" href="#" target="_blank" rel="noopener noreferrer">
+              <span><span class="flag">🇬🇧</span> Apply Now — UK</span>
+              <span class="arrow">→</span>
+            </a>
+            <a class="apply-option" id="applyUS" href="#" target="_blank" rel="noopener noreferrer">
+              <span><span class="flag">🇺🇸</span> Apply Now — US</span>
+              <span class="arrow">→</span>
+            </a>
+            <a class="apply-option" id="applyCA" href="#" target="_blank" rel="noopener noreferrer">
+              <span><span class="flag">🇨🇦</span> Apply Now — Canada</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+          <p class="apply-disclaimer">
+            Apply Now opens an external job search site in a new tab. JobTrend365 never charges
+            a fee and never asks for payment to apply.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <span class="logo-mark">JT</span>
+            JobTrend365
+          </div>
+          <p>
+            JobTrend365 is an independent information resource covering the most searched jobs
+            in the UK, US and Canada. We're not a recruitment agency and don't charge job seekers
+            for anything on this site.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#categories">Top 10 categories</a></li>
+            <li><a href="index.html#reviews">Reviews &amp; Q&amp;A</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Good to know</h4>
+          <ul>
+            <li>Free to browse — always</li>
+            <li>No CV upload or sign-up needed</li>
+            <li>Apply Now links go to trusted job boards</li>
+            <li>Genuine employers never charge to apply</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 JobTrend365. All rights reserved.</span>
+        <span>Informational resource — not a recruitment agency or employer.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const catId = params.get('cat');
+    const job = JOB_CATEGORIES.find(c => c.id === catId);
+
+    if (!job) {
+      document.getElementById('pageContent').style.display = 'none';
+      document.querySelector('.site-footer').style.display = 'none';
+      document.getElementById('notFound').style.display = 'block';
+    } else {
+      document.title = job.title + ' — Job Details | JobTrend365';
+
+      document.getElementById('breadcrumbTitle').textContent = job.title;
+      document.getElementById('jobTitle').textContent = job.title;
+      document.getElementById('jobTagline').textContent = job.tagline;
+      document.getElementById('jobAbout').textContent = job.about;
+
+      document.getElementById('badgeRank').textContent = '#' + String(job.rank).padStart(2, '0') + ' most searched';
+      document.getElementById('badgeTrend').textContent = '▲ ' + job.trend + ' searches this year';
+
+      document.getElementById('detailIcon').innerHTML =
+        `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${job.icon}</svg>`;
+
+      document.getElementById('salaryUK').textContent = job.salary.uk;
+      document.getElementById('salaryUS').textContent = job.salary.us;
+      document.getElementById('salaryCA').textContent = job.salary.ca;
+
+      const respList = document.getElementById('responsibilitiesList');
+      job.responsibilities.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        respList.appendChild(li);
+      });
+
+      const reqList = document.getElementById('requirementsList');
+      job.requirements.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        reqList.appendChild(li);
+      });
+
+      const stepsList = document.getElementById('howToJoinList');
+      job.howToJoin.forEach((step, i) => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="step-num">${i + 1}</span><span class="step-text">${step}</span>`;
+        stepsList.appendChild(li);
+      });
+
+      document.getElementById('applyUK').href = job.apply.uk;
+      document.getElementById('applyUS').href = job.apply.us;
+      document.getElementById('applyCA').href = job.apply.ca;
+    }
+  </script>
+
+</body>
+</html>
