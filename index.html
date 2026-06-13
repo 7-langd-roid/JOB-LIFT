@@ -1,174 +1,312 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JOBLIFT | Premium Job Placements</title>
-    <!-- Tailwind CSS for modern, clean styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Lift — Most Applied Jobs in the UK, US &amp; Canada</title>
+  <meta name="description" content="See the 10 most applied-for jobs in the UK, US and Canada, with salary ranges, how to join, and a direct Apply Now link." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+<body>
 
-    <!-- Header / Navigation Bar -->
-    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-briefcase text-blue-600 text-2xl"></i>
-                <span class="text-xl font-bold tracking-tight text-gray-900">Apex<span class="text-blue-600">Staffing</span></span>
-            </div>
-            <a href="https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg transition duration-200 shadow-sm text-sm">
-                Apply Now
-            </a>
+  <!-- ===================== Header ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">JL</span>
+        Job<span>Lift</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="#categories">Top Categories</a>
+        <a href="#reviews">Reviews</a>
+        <span class="nav-flags">🇬🇧 UK · 🇺🇸 US · 🇨🇦 CA</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== Ticker ===================== -->
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"><!-- filled by script.js --></div>
+  </div>
+
+  <!-- ===================== Top Apply Banner ===================== -->
+  <div class="apply-banner">
+    <div class="container">
+      <p>#1 most applied-for job right now: <strong>Warehouse &amp; Fulfilment Associate</strong> — UK, US &amp; Canada</p>
+      <a href="category.html?cat=warehouse-associate#apply" class="btn btn-primary">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">● Updated for the last 365 days</span>
+        <h1>The <em>most applied-for jobs</em> in the UK, US &amp; Canada — ranked, explained, and ready to apply for.</h1>
+        <p class="lead">
+          We track which jobs people are actually applying to across the UK, US and Canada,
+          then turn the top 10 into a simple guide: what the job involves, what it pays,
+          and exactly how to apply — no spam, no sign-up required.
+        </p>
+        <div class="hero-actions">
+          <a href="#categories" class="btn btn-primary">Browse top categories</a>
+          <a href="#reviews" class="btn btn-outline">Read real questions</a>
         </div>
-    </header>
-
-    <!-- Hero Section (Split Layout with High-Quality Image) -->
-    <section class="bg-slate-900 text-white py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/20 px-3 py-1.5 rounded-full text-blue-400 text-sm font-medium mb-6">
-                    <i class="fa-solid fa-circle-check text-xs text-green-400 animate-pulse"></i>
-                    <span>Now Hiring: Global Remote & On-Site Roles</span>
-                </div>
-                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
-                    Get Hired by Top Firms <br>In Less Than 72 Hours
-                </h1>
-                <p class="text-lg text-slate-300 mb-8 max-w-lg">
-                    Stop chasing dead-end application boards. We bypass the HR filters to place qualified candidates into premium corporate roles instantly. 
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition duration-200 text-lg shadow-lg shadow-blue-600/20 text-center flex items-center justify-center">
-                        Start My Application <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- Hero Image -->
-            <div class="relative">
-                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 opacity-20 blur-lg"></div>
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team working together" class="relative rounded-2xl shadow-2xl border border-slate-800 object-cover w-full h-[350px] md:h-[450px]">
-            </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">10</div>
+            <div class="label">Job categories</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">03</div>
+            <div class="label">Countries covered</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">365</div>
+            <div class="label">Days of activity tracked</div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Trustpilot Review Section -->
-    <section class="bg-white border-b border-slate-100 py-10 px-4">
-        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-around gap-8 text-center md:text-left">
-            <div class="flex flex-col items-center md:items-start">
-                <div class="flex items-center space-x-1 text-emerald-500 font-bold text-xl mb-1">
-                    <i class="fa-solid fa-star bg-emerald-500 text-white p-1 rounded-sm text-xs"></i>
-                    <span>Trustpilot</span>
-                </div>
-                <div class="flex text-emerald-500 text-xl space-x-0.5 mb-2">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="text-sm text-slate-500">Rated <span class="font-bold text-slate-700">4.8 / 5</span> by 1,240+ verified candidates.</p>
-            </div>
-            
-            <div class="h-px w-16 bg-slate-200 md:h-12 md:w-px"></div>
+      <div class="hero-art">
+        <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a job search results panel">
+          <rect x="20" y="20" width="440" height="380" rx="20" fill="#ffffff" stroke="#d8e3fb" stroke-width="2"/>
+          <rect x="20" y="20" width="440" height="50" rx="20" fill="#eaf1ff"/>
+          <rect x="20" y="50" width="440" height="20" fill="#eaf1ff"/>
+          <circle cx="46" cy="45" r="5" fill="#d8e3fb"/>
+          <circle cx="64" cy="45" r="5" fill="#d8e3fb"/>
+          <circle cx="82" cy="45" r="5" fill="#d8e3fb"/>
 
-            <div class="max-w-md">
-                <p class="italic text-slate-600 text-base mb-2">
-                    "I submitted my details via Apex on Tuesday morning. By Thursday afternoon, I had completed my interview and landed a high-paying remote operations role."
-                </p>
-                <p class="text-sm font-semibold text-slate-900">— Marcus V., Operations Lead</p>
+          <!-- search bar -->
+          <rect x="44" y="92" width="392" height="46" rx="23" fill="#eaf1ff" stroke="#d8e3fb" stroke-width="1.5"/>
+          <circle cx="72" cy="115" r="8" fill="none" stroke="#2456e5" stroke-width="3"/>
+          <line x1="78" y1="121" x2="87" y2="130" stroke="#2456e5" stroke-width="3" stroke-linecap="round"/>
+          <text x="100" y="121" font-family="IBM Plex Mono, monospace" font-size="15" fill="#0b1f44">warehouse associate</text>
+
+          <!-- result row 1 -->
+          <rect x="44" y="166" width="392" height="60" rx="14" fill="#ffffff" stroke="#d8e3fb" stroke-width="1.5"/>
+          <rect x="62" y="183" width="28" height="26" rx="7" fill="#eaf1ff"/>
+          <rect x="104" y="185" width="170" height="10" rx="5" fill="#0b1f44"/>
+          <rect x="104" y="203" width="110" height="8" rx="4" fill="#d8e3fb"/>
+          <circle cx="404" cy="196" r="17" fill="#2456e5"/>
+          <text x="404" y="200" font-family="IBM Plex Mono, monospace" font-size="11" fill="#ffffff" text-anchor="middle">UK</text>
+
+          <!-- result row 2 -->
+          <rect x="44" y="238" width="392" height="60" rx="14" fill="#ffffff" stroke="#d8e3fb" stroke-width="1.5"/>
+          <rect x="62" y="255" width="28" height="26" rx="7" fill="#eaf1ff"/>
+          <rect x="104" y="257" width="190" height="10" rx="5" fill="#0b1f44"/>
+          <rect x="104" y="275" width="120" height="8" rx="4" fill="#d8e3fb"/>
+          <circle cx="404" cy="268" r="17" fill="#4fa6ff"/>
+          <text x="404" y="272" font-family="IBM Plex Mono, monospace" font-size="11" fill="#ffffff" text-anchor="middle">US</text>
+
+          <!-- result row 3 -->
+          <rect x="44" y="310" width="392" height="60" rx="14" fill="#ffffff" stroke="#d8e3fb" stroke-width="1.5"/>
+          <rect x="62" y="327" width="28" height="26" rx="7" fill="#eaf1ff"/>
+          <rect x="104" y="329" width="150" height="10" rx="5" fill="#0b1f44"/>
+          <rect x="104" y="347" width="95" height="8" rx="4" fill="#d8e3fb"/>
+          <circle cx="404" cy="340" r="17" fill="#15349e"/>
+          <text x="404" y="344" font-family="IBM Plex Mono, monospace" font-size="11" fill="#ffffff" text-anchor="middle">CA</text>
+
+          <!-- floating trend badge -->
+          <g>
+            <rect x="318" y="2" width="150" height="36" rx="18" fill="#0b1f44"/>
+            <text x="338" y="25" font-family="IBM Plex Mono, monospace" font-size="13" fill="#6fe3a5">▲ +38%</text>
+            <text x="392" y="25" font-family="Inter, sans-serif" font-size="12" fill="#ffffff">applied</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Categories ===================== -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Top 10 list · refreshed periodically</span>
+        <h2>The 10 most applied-for jobs right now</h2>
+        <p>
+          Ranked by how many people apply, across the UK, US and Canada. Tap any category to see
+          typical pay, day-to-day duties, how to join, and a direct link to apply.
+        </p>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <!-- filled by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Reviews / Q&A ===================== -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Community Q&amp;A</span>
+        <h2>Real questions from job seekers, answered by our team</h2>
+        <p>
+          A few of the most common questions we get from people browsing Job Lift —
+          and the honest answers we send back.
+        </p>
+      </div>
+
+      <div class="review-list">
+
+        <article class="review">
+          <div class="review-head">
+            <div class="avatar">SM</div>
+            <div class="review-meta">
+              <div class="review-name">Sarah M. — Manchester, UK</div>
+              <div class="stars">★★★★★</div>
             </div>
+          </div>
+          <p class="review-q">Is Job Lift actually free to use? There's no catch when I click "Apply Now," right?</p>
+          <div class="review-reply">
+            <div class="reply-mark">JL</div>
+            <p><strong>Job Lift Team:</strong> Hi Sarah — thanks for checking! Yes, browsing every category and using the Apply Now links is completely free. We never ask for payment, card details, or personal information on this site. Apply Now simply takes you to job search results on a trusted site like Indeed, where you apply directly with the employer.</p>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <div class="avatar">MT</div>
+            <div class="review-meta">
+              <div class="review-name">Marcus T. — Houston, TX, US</div>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-q">How often is the "most applied" list updated? Is it worth checking back regularly?</p>
+          <div class="review-reply">
+            <div class="reply-mark">JL</div>
+            <p><strong>Job Lift Team:</strong> Great question, Marcus. We review the ranking and percentages periodically based on broader application activity data, so it's worth checking back every few weeks — especially around seasonal hiring periods, like the run-up to the holidays.</p>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <div class="avatar">PK</div>
+            <div class="review-meta">
+              <div class="review-name">Priya K. — Toronto, ON, Canada</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-q">Do I need a work permit to apply for the jobs you've listed for Canada?</p>
+          <div class="review-reply">
+            <div class="reply-mark">JL</div>
+            <p><strong>Job Lift Team:</strong> Hi Priya — it depends on your immigration status. Canadian citizens and permanent residents can apply directly. If you're on a study or work permit, double-check that it allows the type of work and number of hours for the role before applying — the employer or a licensed immigration consultant can confirm your eligibility.</p>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <div class="avatar">DO</div>
+            <div class="review-meta">
+              <div class="review-name">Dave O. — Leeds, UK</div>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-q">I clicked Apply Now and applied through Indeed, but I haven't heard anything back yet — is that normal?</p>
+          <div class="review-reply">
+            <div class="reply-mark">JL</div>
+            <p><strong>Job Lift Team:</strong> Yes, that's common, Dave. Response times vary a lot by employer and role — some reply within days, others take a few weeks, especially for high-volume roles like warehouse or retail. Keep an eye on your inbox (including spam) and consider applying to a few similar listings to improve your chances.</p>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <div class="avatar">AR</div>
+            <div class="review-meta">
+              <div class="review-name">Aisha R. — Sacramento, CA, US</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-q">I'm a student looking for part-time work — are any of these categories good for that?</p>
+          <div class="review-reply">
+            <div class="reply-mark">JL</div>
+            <p><strong>Job Lift Team:</strong> Definitely, Aisha. Food Service Crew Member, Retail Sales Associate and Cleaning &amp; Housekeeping roles tend to be the most flexible for evenings and weekends, and many don't require prior experience. Just double-check the minimum working age rules where you live.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <span class="logo-mark">JL</span>
+            Job Lift
+          </div>
+          <p>
+            Job Lift is an independent information resource covering the most applied-for jobs
+            in the UK, US and Canada. We're not a recruitment agency and don't charge job seekers
+            for anything on this site.
+          </p>
         </div>
-    </section>
-
-    <!-- Application Success Tips Section -->
-    <section class="py-16 px-4 max-w-5xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900">How to Fast-Track Your Application</h2>
-            <p class="text-slate-500 mt-2">Follow these 3 insider recruiting tips to jump directly to the top of our interview pool.</p>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#categories">Top 10 categories</a></li>
+            <li><a href="#reviews">Reviews &amp; Q&amp;A</a></li>
+            <li><a href="category.html?cat=warehouse-associate">Warehouse Associate</a></li>
+            <li><a href="category.html?cat=delivery-driver">Delivery Driver</a></li>
+          </ul>
         </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded-md">Tip 01</span>
-                <h3 class="text-lg font-bold mt-3 mb-2">Complete Every Field</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">Incomplete application forms are auto-rejected by client portals. Make sure to accurately input your primary phone number and modern email address.</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded-md">Tip 02</span>
-                <h3 class="text-lg font-bold mt-3 mb-2">Have a Clean Link Ready</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">Ensure your portfolio, résumé link, or digital background information sheet is set to "Public View" so our screening managers can read it instantly.</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded-md">Tip 03</span>
-                <h3 class="text-lg font-bold mt-3 mb-2">Check Your Spam Box</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">Initial matching alerts and quick confirmation texts go out within 15 minutes of hitting apply. Stay alert to lock down your preferred time slot.</p>
-            </div>
+        <div>
+          <h4>Good to know</h4>
+          <ul>
+            <li>Free to browse — always</li>
+            <li>No CV upload or sign-up needed</li>
+            <li>Apply Now links go to trusted job boards</li>
+            <li>Genuine employers never charge to apply</li>
+          </ul>
         </div>
-    </section>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Job Lift. All rights reserved.</span>
+        <span>Informational resource — not a recruitment agency or employer.</span>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Interactive Hiring Process Graphic Section -->
-    <section class="bg-slate-100 py-16 px-4">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div class="order-2 md:order-1">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Successful Interviewee" class="rounded-2xl shadow-xl border border-white object-cover w-full h-[350px]">
-            </div>
-            <div class="order-1 md:order-2 space-y-6">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900">A Placement Agency Layout Built on Trust</h2>
-                <p class="text-slate-600 leading-relaxed">
-                    We do not play games with your professional timeline. Our system links directly with top-tier corporate platforms to parse your technical skills, ensuring you only receive calls for roles matching your exact baseline expectations.
-                </p>
-                <div class="space-y-3">
-                    <div class="flex items-start space-x-3">
-                        <i class="fa-solid fa-circle-check text-blue-600 mt-1"></i>
-                        <span class="text-slate-700 text-sm">No long, multi-page profile setups needed.</span>
-                    </div>
-                    <div class="flex items-start space-x-3">
-                        <i class="fa-solid fa-circle-check text-blue-600 mt-1"></i>
-                        <span class="text-slate-700 text-sm">Immediate assignment status matching your location.</span>
-                    </div>
-                </div>
-                <div class="pt-2">
-                    <a href="https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition duration-200 shadow-md">
-                        Apply Now & Skip the Line
-                    </a>
-                </div>
-            </div>
+  <script src="data.js"></script>
+  <script>
+    // Render the ticker tape using live category data (duplicated for a seamless loop)
+    const tickerTrack = document.getElementById('tickerTrack');
+    const tickerItems = JOB_CATEGORIES.map(cat =>
+      `<span class="ticker-item"><span class="ticker-flag">🇬🇧🇺🇸🇨🇦</span> ${cat.title} <span class="ticker-up">▲ ${cat.trend} applied</span></span>`
+    ).join('');
+    tickerTrack.innerHTML = tickerItems + tickerItems;
+
+    // Render the category grid
+    const grid = document.getElementById('categoryGrid');
+    JOB_CATEGORIES.forEach(cat => {
+      const a = document.createElement('a');
+      a.href = `category.html?cat=${cat.id}`;
+      a.className = 'category-card';
+      a.innerHTML = `
+        <span class="rank">#${String(cat.rank).padStart(2, '0')} MOST APPLIED</span>
+        <div class="icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${cat.icon}</svg>
         </div>
-    </section>
-
-    <!-- Bottom CTA (Final Action Point) -->
-    <section class="bg-slate-950 text-white py-16 px-4 text-center">
-        <div class="max-w-xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to find your ideal role?</h2>
-            <p class="text-slate-400 mb-8 text-sm">Applications are evaluated in real-time. Secure your placement slot for the current quarter below.</p>
-            <a href="https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik" target="_blank" rel="noopener noreferrer" class="inline-block w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition duration-200 text-lg shadow-md text-center">
-                Submit Your Application Now
-            </a>
-            <div class="mt-4 text-xs text-slate-500 flex items-center justify-center space-x-2">
-                <i class="fa-solid fa-lock text-[10px]"></i>
-                <span>Your professional credentials are strictly encrypted and completely secure.</span>
-            </div>
+        <h3>${cat.title}</h3>
+        <p>${cat.tagline}</p>
+        <div class="card-foot">
+          <span class="trend-up">▲ ${cat.trend} applications</span>
+          <span class="flags">🇬🇧 🇺🇸 🇨🇦</span>
         </div>
-    </section>
-
-    <!-- Terms and Conditions Drawer Section -->
-    <section class="bg-slate-900 border-t border-slate-800 text-slate-400 py-12 px-4 text-xs">
-        <div class="max-w-4xl mx-auto">
-            <h3 class="font-bold text-slate-200 text-sm mb-4 uppercase tracking-wider">Terms & Conditions of Use</h3>
-            <div class="space-y-3 h-32 overflow-y-scroll bg-slate-950 p-4 rounded-lg border border-slate-800 leading-relaxed scrollbar-thin">
-                <p><strong>1. Acceptance of Terms:</strong> By clicking "Apply Now" or submitting an application through this landing page portal, you explicitly agree to be bound by these Terms and Conditions and our underlying routing disclosures.</p>
-                <p><strong>2. Agency Routing Services:</strong> This website acts exclusively as a preliminary matching landing node. Upon initiating an application, users are transferred securely via corporate tracking links to our partner networks, employers, or downstream specialized staffing channels to conclude the registration process.</p>
-                <p><strong>3. User Responsibilities:</strong> You represent that all details, backgrounds, portfolio references, and credential claims provided are completely accurate and belong to you. Misleading profiles or fraudulent submissions result in structural lockout from our placement databases.</p>
-                <p><strong>5. Communication Consent:</strong> Completing your application signifies clear consent to receive automated verification text notifications, interview setup links, and match notifications from the partner network at the contacts you provided.</p>
-            </div>
+        <div class="card-foot" style="border-top:none; padding-top:8px;">
+          <span class="view-link">View pay, requirements &amp; apply →</span>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-950 text-slate-600 text-[11px] py-6 text-center border-t border-slate-900">
-        <p>&copy; 2026 JOBLIFT Apex Staffing Group. All rights reserved.</p>
-        <p class="mt-1 text-slate-700">Privacy Policy | Cookie Disclosure | Global Recruitment Terms</p>
-    </footer>
+      `;
+      grid.appendChild(a);
+    });
+  </script>
 
 </body>
 </html>
