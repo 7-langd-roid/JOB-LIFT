@@ -1,5 +1,5 @@
 /* ============================================================
-   JobLift — shared job category data
+   Job Lift — shared job category data
    Used by both index.html (category grid) and category.html
    (job detail pages). Edit this file to add, remove, or update
    job categories — both pages will update automatically.
@@ -20,13 +20,13 @@ const ICONS = {
   bucket: '<path d="M10 18c0-3.5 4.7-6 14-6s14 2.5 14 6"/><path d="M10 18h28l-3.2 20a3 3 0 0 1-3 2.6H16.2a3 3 0 0 1-3-2.6z"/>',
 };
 
-// Apply links use real job , filtered by query + country.
+// Apply links use real job search engines, filtered by query + country.
 function applyLinks(query) {
   const q = encodeURIComponent(query);
   return {
-    uk: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
-    us: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
-    ca: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
+    uk: `https://uk.indeed.com/jobs?q=${q}`,
+    us: `https://www.indeed.com/jobs?q=${q}`,
+    ca: `https://ca.indeed.com/jobs?q=${q}`,
   };
 }
 
@@ -71,7 +71,7 @@ const JOB_CATEGORIES = [
     tagline: "Last-mile parcel and food delivery, employed or self-employed",
     trend: "+45%",
     salary: { uk: "£22,000 – £29,500 / yr", us: "$35,000 – $48,000 / yr", ca: "C$36,000 – C$47,000 / yr" },
-    about: "Same-day and next-day delivery has become normal, and courier networks across all three countries are constantly adding drivers for vans, cars and bikes. Many roles offer flexible routes or shift patterns, which makes this one of the fastest-rising searches of the year — particularly around peak shopping seasons.",
+    about: "Same-day and next-day delivery has become normal, and courier networks across all three countries are constantly adding drivers for vans, cars and bikes. Many roles offer flexible routes or shift patterns, which makes this one of the most applied-for categories of the year — particularly around peak shopping seasons.",
     responsibilities: [
       "Load your vehicle and follow an optimised delivery route",
       "Scan parcels and confirm proof of delivery using a driver app",
