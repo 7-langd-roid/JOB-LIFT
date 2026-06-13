@@ -60,7 +60,7 @@ const JOB_CATEGORIES = [
       "Complete the short online application and any basic numeracy or scanning assessment.",
       "Attend orientation and safety training before your first shift on the floor.",
     ],
-    apply: applyLinks("warehouse associate"),
+    apply: applyLinks("https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik"),
   },
   {
     id: "delivery-driver",
