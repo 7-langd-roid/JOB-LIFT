@@ -24,9 +24,10 @@ const ICONS = {
 function applyLinks(query) {
   const q = encodeURIComponent(query);
   return {
-    uk: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik `,
-    us: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik `,
-    ca: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik `,
+    uk: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
+    us: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
+    ca: `https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik${q}`,
+  };
 }
 
 const JOB_CATEGORIES = [
@@ -60,7 +61,7 @@ const JOB_CATEGORIES = [
       "Complete the short online application and any basic numeracy or scanning assessment.",
       "Attend orientation and safety training before your first shift on the floor.",
     ],
-    apply: applyLinks("https://www.af9m8trk.com/85N11AS3/QLQ11Y4B/?s1=Anik"),
+    apply: applyLinks("warehouse associate"),
   },
   {
     id: "delivery-driver",
