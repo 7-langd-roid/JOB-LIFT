@@ -1,5 +1,5 @@
 /* ============================================================
-   JobLift — shared styles
+   Job Lift — shared styles
    A calm, data-led blue & white system for a job-trends site.
    ============================================================ */
 
@@ -172,6 +172,46 @@ img, svg { display: block; }
   color: var(--muted);
   border-left: 1px solid var(--blue-line);
   padding-left: 20px;
+}
+
+/* ---------------- Top apply banner ---------------- */
+
+.apply-banner {
+  background: var(--blue);
+}
+
+.apply-banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+}
+
+.apply-banner p {
+  margin: 0;
+  color: var(--white);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.apply-banner strong { font-weight: 700; }
+
+.apply-banner .btn-primary {
+  background: var(--white);
+  color: var(--blue);
+  box-shadow: none;
+  flex-shrink: 0;
+}
+
+.apply-banner .btn-primary:hover {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+
+@media (max-width: 600px) {
+  .apply-banner .container { justify-content: center; text-align: center; }
 }
 
 /* ---------------- Ticker ---------------- */
