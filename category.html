@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Job Category Details — JobLift</title>
+  <title>Job Category Details — Job Lift</title>
   <meta name="description" content="Job details, typical pay, how to join, terms and an apply now link for the UK, US and Canada." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,8 @@
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo">
-        <span class="logo-mark">JT</span>
-        JobLift<span>360</span>
+        <span class="logo-mark">JL</span>
+        Job<span>Lift</span>
       </a>
       <nav class="main-nav">
         <a href="index.html">Home</a>
@@ -27,12 +28,21 @@
     </div>
   </header>
 
+  <!-- ===================== Top Apply Banner ===================== -->
+  <div class="apply-banner">
+    <div class="container">
+      <p>Most applied-for jobs in the UK, US &amp; Canada — updated regularly</p>
+      <a href="#apply" class="btn btn-primary">Apply Now</a>
+    </div>
+  </div>
+
+
   <!-- ===================== Not found state ===================== -->
   <div id="notFound" class="not-found" style="display:none;">
     <div class="container">
       <span class="eyebrow">404 · Category not found</span>
       <h1>We couldn't find that job category</h1>
-      <p>The link you followed may be out of date. Take a look at our full list of the most searched jobs instead.</p>
+      <p>The link you followed may be out of date. Take a look at our full list of the most applied-for jobs instead.</p>
       <a href="index.html#categories" class="btn btn-primary">Back to top categories</a>
     </div>
   </div>
@@ -54,7 +64,7 @@
       <div>
         <div class="badge-row" style="margin-bottom:10px;">
           <span class="badge badge-rank" id="badgeRank">#01</span>
-          <span class="badge badge-trend" id="badgeTrend">▲ +0% applyimg job this year</span>
+          <span class="badge badge-trend" id="badgeTrend">▲ +0% applications this year</span>
           <span class="badge">🇬🇧 🇺🇸 🇨🇦 Hiring in all 3 countries</span>
         </div>
         <h1 id="jobTitle">Job title</h1>
@@ -125,12 +135,12 @@
           <h2>Terms &amp; conditions before you apply</h2>
           <div class="terms-box">
             <ol>
-              <li>JobLift is an independent information resource. We are not a recruitment agency and do not represent any employer listed.</li>
+              <li>Job Lift is an independent information resource. We are not a recruitment agency and do not represent any employer listed.</li>
               <li>All salary figures are general estimates based on publicly available market data and can vary by location, experience and employer.</li>
               <li>The "Apply Now" buttons take you to job search results on a third-party site (such as Indeed). We don't control or guarantee the accuracy of listings on external sites.</li>
               <li>Genuine employers never ask you to pay a fee, buy equipment, or send money in order to apply for or accept a job. If anyone asks you for payment, treat it as a scam and do not proceed.</li>
               <li>You must meet the legal working age and right-to-work requirements for the country you apply in.</li>
-              <li>JobLift does not collect CVs, applications or personal data through this site, and we are not responsible for the hiring decisions or outcomes of any third party.</li>
+              <li>Job Lift does not collect CVs, applications or personal data through this site, and we are not responsible for the hiring decisions or outcomes of any third party.</li>
             </ol>
           </div>
         </section>
@@ -138,7 +148,7 @@
       </div>
 
       <!-- Sidebar -->
-      <aside>
+      <aside id="apply">
         <div class="apply-card">
           <h3>Ready to apply?</h3>
           <p>Choose your country to see current openings for this role on a trusted job search site.</p>
@@ -157,7 +167,7 @@
             </a>
           </div>
           <p class="apply-disclaimer">
-            Apply Now opens an external job search site in a new tab. Joblift never charges
+            Apply Now opens an external job search site in a new tab. Job Lift never charges
             a fee and never asks for payment to apply.
           </p>
         </div>
@@ -172,11 +182,11 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo">
-            <span class="logo-mark">JT</span>
-            Joblift
+            <span class="logo-mark">JL</span>
+            Job Lift
           </div>
           <p>
-            JobLift is an independent information resource covering the most searched jobs
+            Job Lift is an independent information resource covering the most applied-for jobs
             in the UK, US and Canada. We're not a recruitment agency and don't charge job seekers
             for anything on this site.
           </p>
@@ -200,7 +210,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Joblift. All rights reserved.</span>
+        <span>© 2026 Job Lift. All rights reserved.</span>
         <span>Informational resource — not a recruitment agency or employer.</span>
       </div>
     </div>
@@ -217,15 +227,15 @@
       document.querySelector('.site-footer').style.display = 'none';
       document.getElementById('notFound').style.display = 'block';
     } else {
-      document.title = job.title + ' — Job Details | JobTrend365';
+      document.title = job.title + ' — Job Details | Job Lift';
 
       document.getElementById('breadcrumbTitle').textContent = job.title;
       document.getElementById('jobTitle').textContent = job.title;
       document.getElementById('jobTagline').textContent = job.tagline;
       document.getElementById('jobAbout').textContent = job.about;
 
-      document.getElementById('badgeRank').textContent = '#' + String(job.rank).padStart(2, '0') + ' most searched';
-      document.getElementById('badgeTrend').textContent = '▲ ' + job.trend + ' searches this year';
+      document.getElementById('badgeRank').textContent = '#' + String(job.rank).padStart(2, '0') + ' most applied';
+      document.getElementById('badgeTrend').textContent = '▲ ' + job.trend + ' applications this year';
 
       document.getElementById('detailIcon').innerHTML =
         `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${job.icon}</svg>`;
